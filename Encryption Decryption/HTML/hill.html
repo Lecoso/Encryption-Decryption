@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Text File</title>
+    <link href="../style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sticky-nav sticky-nav-top">
+        <nav class="header-nav">
+            <div class="appName"><a href="index.html"> <span class="bold">ENCRYPTION AND DECRYPTION</span></a></div>
+            <div class="nav-bar">
+                <ul class="nav-bar-list">
+                    <li><a href="ceaser.html">Ceaser Cipher</a></li>
+                    <li><a href="hill.html">Hill Cipher</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section class="main-box">
+            <h2>Hill Cipher</h2>
+            <div class="container-btn">
+                <button class="btn hill-encrypt">Encrypt</button>
+                <button class="btn hill-decrypt">Decrypt</button>
+            </div>
+            <div id="drop-area">First Choose Encryption / Decryption</div>
+            <div id="start-guide"><span>First Choose Encryption / Decryption</span></div>
+            <div id="file-path"></div>
+            <button id="copyButton" class="btn hidden">Copy Text</button>
+            <button id="saveButton" class="btn hidden">Save as .txt File</button>
+
+            <div id="file-content" class="hidden"></div>
+        </section>
+    </main>
+    <script type="module" src="../JS/hill.js"></script>
+</body>
+
+</html>
